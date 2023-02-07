@@ -26,9 +26,9 @@ $ cmsRun <cfg_file_in_configs_directory>
 ```
 $ cd ..
 $ git clone https://github.com/cms-nanoAOD/nanoAOD-tools.git PhysicsTools/NanoAODTools
-$ scram b 
 $ cp ../../NANOAODTool_part/exampleModule.py PhysicsTools/NanoAODTools/python/postprocessing/examples
 $ cp ../../NANOAODTool_part/keep_and_drop* PhysicsTools/NanoAODTools/scripts
+$ scram b 
 $ python scripts/nano_postproc.py outDir <absolute path of NANOGEN file> -I PhysicsTools.NanoAODTools.postprocessing.examples.exampleModule exampleModuleConstr -s _exaModu_keepdrop --bi scripts/keep_and_drop_input.txt --bo scripts/keep_and_drop_output.txt
 ```
 * In outDir directory, you should have output root file that you can have a look or run plotting code. 

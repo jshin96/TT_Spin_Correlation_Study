@@ -6,4 +6,7 @@
   * So when you run the first time, change this into run_generic_tarball_xrootd.sh, and then change to   run_generic_tarball_local.sh for future generations so you don't download tarball everytime. 
 ```
 $ cmsrel CMSSW_12_4_8
+$ cd CMSSW_12_4_8/src
+$ git cms-addpkg GeneratorInterface/LHEInterface
+$ mv 
 ```

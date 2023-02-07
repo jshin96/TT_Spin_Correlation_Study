@@ -12,5 +12,9 @@ $ cd -
 $ mv Configuration CMSSW_12_4_8/src
 $ mv run_generic_tarball_local.sh GeneratorInterface/LHEInterface
 $ mv runCmsDriverNanoGen.sh CMSSW_12_4_8/src
+$ sed -i "s/local/xroots/g" Configuration/TT_Spin_Corr/python/<cff_file_name_in_Configuration>
 $ ./runCmsFriverNanoGen.sh <cff_file_name_in_Configuration> <output_root_file_name>
+$ sed -i "s/xrootd/local/g" Configuration/TT_Spin_Corr/python/<cff_file_name_in_Configuration>
+$ cd configs
+$ cmsRun <cfg_file_in_configs_directory>
 ```

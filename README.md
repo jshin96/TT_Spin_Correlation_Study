@@ -5,3 +5,5 @@
   * Here I use run_generic_tarball_local.sh file which just uses local tarball that is in the directory of cfg. 
   * So when you run the first time, change this into run_generic_tarball_xrootd.sh, and then change to   run_generic_tarball_local.sh for future generations so you don't download tarball everytime. 
   
+  $ cmsrel CMSSW_12_4_8
+  

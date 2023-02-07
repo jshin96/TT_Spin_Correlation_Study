@@ -8,5 +8,9 @@
 $ cmsrel CMSSW_12_4_8
 $ cd CMSSW_12_4_8/src
 $ git cms-addpkg GeneratorInterface/LHEInterface
-$ mv 
+$ cd -
+$ mv Configuration CMSSW_12_4_8/src
+$ mv run_generic_tarball_local.sh GeneratorInterface/LHEInterface
+$ mv runCmsDriverNanoGen.sh CMSSW_12_4_8/src
+$ ./runCmsFriverNanoGen.sh <cff_file_name_in_Configuration> <output_root_file_name>
 ```

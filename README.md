@@ -20,6 +20,8 @@ $ cmsRun <cfg_file_in_configs_directory>
 ```
  * This will give NANOGEN root files, then move onto the NANOAOD-Tools Part
 ## NANOAOD-Tools Part
+ * exampleModule.py is the file that determines the analysis.
+ * keep_and_drop_input.txt and keep_and_drop_output.txt determines the branch that goes into the analyzer and what branch remains in the output file.
 
 ```
 $ cd ..
@@ -27,3 +29,7 @@ $ git clone https://github.com/cms-nanoAOD/nanoAOD-tools.git PhysicsTools/NanoAO
 $ scram b 
 $ cp ../../NANOAODTool_part/exampleModule.py PhysicsTools/NanoAODTools/python/postprocessing/examples
 $ cp ../../NANOAODTool_part/keep_and_drop* PhysicsTools/NanoAODTools/scripts
+$ python scripts/nano_postproc.py outDir <absolute path of NANOGEN file> -I PhysicsTools.NanoAODTools.postprocessing.examples.exampleModule exampleModuleConstr -s _exaModu_keepdrop --bi scripts/keep_and_drop_input.txt --bo scripts/keep_and_drop_output.txt
+```
+* In outDir directory, you should have output root file that you can have a look or run plotting code. 
+

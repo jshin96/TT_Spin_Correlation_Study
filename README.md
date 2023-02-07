@@ -9,9 +9,9 @@ $ cmsrel CMSSW_12_4_8
 $ cd CMSSW_12_4_8/src
 $ cmsenv
 $ git cms-addpkg GeneratorInterface/LHEInterface
-$ cp ../../Configuration .
-$ cp ../../run_generic_tarball_local.sh GeneratorInterface/LHEInterface
-$ cp ../../runCmsDriverNanoGen.sh .
+$ cp ../../NANOGEN_Production_part/Configuration .
+$ cp ../../NANOGEN_Production_part/run_generic_tarball_local.sh GeneratorInterface/LHEInterface
+$ cp ../../NANOGEN_Production_part/runCmsDriverNanoGen.sh .
 $ sed -i "s/local/xroots/g" Configuration/TT_Spin_Corr/python/<cff_file_name_in_Configuration>
 $ ./runCmsFriverNanoGen.sh <cff_file_name_in_Configuration> <output_root_file_name>
 $ sed -i "s/xrootd/local/g" Configuration/TT_Spin_Corr/python/<cff_file_name_in_Configuration>

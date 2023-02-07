@@ -1,0 +1,9 @@
+# this is a comment
+drop *
+keep *toplep_eta*
+keep *antitoplep_eta*
+keep *toplep_phi*
+keep *antitoplep_phi*
+keep *deta*
+keep *dphi*
+keep *top*_mass*

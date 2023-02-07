@@ -9,10 +9,9 @@ $ cmsrel CMSSW_12_4_8
 $ cd CMSSW_12_4_8/src
 $ cmsenv
 $ git cms-addpkg GeneratorInterface/LHEInterface
-$ cd -
-$ mv Configuration CMSSW_12_4_8/src
-$ mv run_generic_tarball_local.sh GeneratorInterface/LHEInterface
-$ mv runCmsDriverNanoGen.sh CMSSW_12_4_8/src
+$ cp ../../Configuration .
+$ cp ../../run_generic_tarball_local.sh GeneratorInterface/LHEInterface
+$ cp ../../runCmsDriverNanoGen.sh .
 $ sed -i "s/local/xroots/g" Configuration/TT_Spin_Corr/python/<cff_file_name_in_Configuration>
 $ ./runCmsFriverNanoGen.sh <cff_file_name_in_Configuration> <output_root_file_name>
 $ sed -i "s/xrootd/local/g" Configuration/TT_Spin_Corr/python/<cff_file_name_in_Configuration>
@@ -25,6 +24,6 @@ $ cmsRun <cfg_file_in_configs_directory>
 ```
 $ cd ..
 $ git clone https://github.com/cms-nanoAOD/nanoAOD-tools.git PhysicsTools/NanoAODTools
-$ cd PhysicsTools/NanoAODTools
 $ scram b 
-$ 
+$ cp ../../NANOAODTool_part/exampleModule.py PhysicsTools/NanoAODTools/python/postprocessing/examples
+$ cp ../../NANOAODTool_part/keep_and_drop* PhysicsTools/NanoAODTools/scripts
